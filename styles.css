@@ -14,6 +14,7 @@ body {
     color: #fff;
     line-height: 1;
     min-height: 100vh;
+    scroll-behavior: smooth;
 }
 ul {
 	list-style: none;
@@ -47,7 +48,7 @@ nav {
 }
 .navbar {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 65px;
     right: 0;
     width: 0;
@@ -87,6 +88,9 @@ nav {
     width: 30px;
     padding: 10px;
     margin: 20px 10px 20px 0;
+}
+.burger:hover {
+    cursor: pointer;
 }
 .burger > span {
     position: absolute;
