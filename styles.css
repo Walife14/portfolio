@@ -86,7 +86,6 @@ nav {
 
 .burger {
     position: relative;
-    top: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -101,6 +100,8 @@ nav {
 }
 .burger.toggled {
     position: fixed;
+    top: 0;
+    right: 0;
 }
 .burger > span {
     position: absolute;
@@ -156,6 +157,49 @@ footer {
     margin-top: auto;
     text-align: center;
     padding: 10px 0;
+}
+
+/* medium screens */
+@media screen and (min-width: 768px) {
+    .separator {
+        margin: 25px auto;;
+    }
+
+    /* project section */
+    .project > img {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .wrapper {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    /* header section */
+    header {
+        margin: 25px 0;
+    }
+
+    /* nav section */
+    .burger {
+        display: none;
+    }
+    nav {
+        height: auto;
+        background-color: #333;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        width: 1024px;
+        margin: 0 auto;
+        padding-top: 0;
+    }
 }
 
 /* animations */
