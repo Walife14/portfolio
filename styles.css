@@ -22,6 +22,9 @@ ul {
 a {
     color: #fff;
 }
+p {
+    margin: 10px 0;
+}
 
 .wrapper {
     margin: 0 10px;
@@ -34,6 +37,9 @@ a {
     margin: 25px 0 25px auto;
 }
 
+section {
+    margin: 10px 0;
+}
 section h2 {
     margin-bottom: 10px;
 }
@@ -142,9 +148,6 @@ header h1 {
 .project > div {
     display: flex;
     margin-top: 5px;
-}
-.project > p {
-    margin: 10px 0;
 }
 
 /* footer */
