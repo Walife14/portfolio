@@ -81,6 +81,7 @@ nav {
 
 .burger {
     position: relative;
+    top: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -92,6 +93,9 @@ nav {
 }
 .burger:hover {
     cursor: pointer;
+}
+.burger.toggled {
+    position: fixed;
 }
 .burger > span {
     position: absolute;
