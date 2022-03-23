@@ -45,6 +45,7 @@ nav {
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
+    height: 65px;
 }
 .navbar {
     display: none;
@@ -62,9 +63,7 @@ nav {
     width: 80%;
     animation: navbarToggle 350ms ease-in;
 }
-@keyframes navbarToggle {
-    from {right: -100%}
-}
+
 .navbar li a {
     display: block;
     text-align: center;
@@ -137,8 +136,6 @@ header h1 {
 
 /* projects */
 
-.project {
-}
 .project > img {
     width: 100%;
 }
@@ -156,4 +153,25 @@ footer {
     margin-top: auto;
     text-align: center;
     padding: 10px 0;
+}
+
+/* animations */
+
+@keyframes navbarToggle {
+    from {right: -100%}
+}
+
+@keyframes grow {
+    0% {
+		width: 50%;
+	}
+	50% {
+		width: 80%;
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .separator-animation {
+      animation: grow 1s linear;
+    }
 }

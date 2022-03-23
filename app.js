@@ -9,3 +9,17 @@ const handleNav = () => {
 }
 
 burger.addEventListener('click', handleNav)
+
+// separator effect
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('separator-animation')
+            return;
+        }
+        entry.target.classList.remove('separator-animation')
+    })
+})
+
+observer.observe(document.querySelector('.separator'))
